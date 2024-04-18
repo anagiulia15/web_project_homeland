@@ -1,0 +1,50 @@
+.button {
+    grid-area: button;
+    font-family:Inter, sans-serif;
+    font-weight:600;
+    font-size:18px;
+    line-height:21.78px;
+    color:#FFFFFF;
+    background-color: #0278FE;
+    text-decoration: none;
+    text-align: center;
+    padding: 13px 20px;
+    width: 355px;
+    border-radius: 4px;
+    align-self: baseline;
+}
+
+.button_cover {
+    width: 158px;
+    z-index: 1;
+    grid-area: unset;
+    align-self: auto;
+}
+
+.button:hover{
+    opacity: .7;
+}
+
+.button_cover:hover ~ .cover__background {
+    opacity: .7;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .button {
+        width: 315px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .button {
+        width: 288px;
+        font-size: 14px;
+        line-height: 16.94px;
+        padding: 12px 0;
+        margin: 0 auto;
+    }
+
+    .button_cover{
+        width: 158px;
+    }
+}
