@@ -15,7 +15,6 @@
 }
 
 .button_cover {
-    width: 158px;
     z-index: 1;
     grid-area: unset;
     align-self: auto;
